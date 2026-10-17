@@ -1,5 +1,5 @@
 const crypto = require('node:crypto');
-const PIXEL_ID = '1125928203446313';
+const PIXEL_ID = '2129324751124192';
 const allowed = new Set(['PageView', 'Subscribe']);
 function sha256(v){return crypto.createHash('sha256').update(v.trim().toLowerCase()).digest('hex');}
 module.exports = async function handler(req,res){
